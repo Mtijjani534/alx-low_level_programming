@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	int x;
+	int num;
+	char alpha;
 
-	for (x = 48; x < 58; x++)
-	{
-		putchar(x);
-	}
-	for (x = 97; x < 103; x++)
-	{
-		putchar(x);
-	}
-	putchar("\n");
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
+	for (alpha = 'a'; alpha <= 'f'; alpha++)
+		putchar(alpha);
+
+	putchar('\n');
+
 	return (0);
 }
