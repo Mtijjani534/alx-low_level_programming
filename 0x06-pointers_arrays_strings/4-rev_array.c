@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reverse_array - reverse array of integers
+ * reverse_array - It reverse array of integers
  * @a: array
  * @n: number of elements of array
  * Return: void
@@ -9,12 +9,12 @@ void reverse_array(int *a, int n)
 {
 	int x;
 
-	int b;
+	int y;
 
 	for (x = 0; x < n--; x++)
 	{
-		b = a[x];
+		y = a[x];
 		a[x] = a[n];
-		a[n] = b
+		a[n] = y;
 	}
 }
