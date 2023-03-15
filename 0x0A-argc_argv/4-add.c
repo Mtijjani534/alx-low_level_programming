@@ -1,4 +1,4 @@
-#include <stdio.h>
+	#include <stdio.h>
 	#include <stdlib.h>
 	#include <ctype.h>
 	#include <string.h>
@@ -9,7 +9,6 @@
 	 */
 	int check_num(char *str)
 	{
-
 		unsigned int count;
 
 		count = 0;
@@ -19,7 +18,6 @@
 			{
 				return (0);
 			}
-
 			count++;
 		}
 		return (1);
@@ -37,11 +35,12 @@
 		int sum = 0;
 
 		count = 1;
+
 		while (count < argc)
 		{
 			if (check_num(argv[count]))
 			{
-				str_to_int = atoi(argv[count]);/*convert string to int*/
+				str_to_int = atoi(argv[count]); /* convert string to int*/
 				sum += str_to_int;
 			}
 			/*Condition if one of the number contains symbols that are not digits*/
